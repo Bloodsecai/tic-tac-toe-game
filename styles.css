@@ -24,31 +24,36 @@ body {
 
 .game {
   text-align: center;
-  padding: 32px;
+  padding: 22px;
   background: var(--surface);
   border-radius: 18px;
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.4);
-  width: min(92vw, 440px);
+  width: min(90vw, 310px);
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.game h1 {
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 .scoreboard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 16px 0 20px;
+  gap: 8px;
+  margin: 12px 0 16px;
 }
 
 .score {
   background: var(--surface-elevated);
   border-radius: 12px;
-  padding: 10px 8px;
+  padding: 8px 6px;
   border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .score .label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -56,14 +61,14 @@ body {
 
 .score .value {
   display: block;
-  margin-top: 6px;
-  font-size: 1.4rem;
+  margin-top: 4px;
+  font-size: 1.05rem;
   font-weight: 700;
 }
 
 .status {
-  margin: 8px 0 20px;
-  font-size: 1.05rem;
+  margin: 6px 0 16px;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--muted);
 }
@@ -72,15 +77,15 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 8px;
+  margin-bottom: 18px;
 }
 
 .cell {
   aspect-ratio: 1 / 1;
   border: 2px solid var(--grid);
   border-radius: 12px;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--text);
   background: var(--surface-elevated);
@@ -111,8 +116,8 @@ body {
 }
 
 .reset {
-  padding: 12px 20px;
-  font-size: 1rem;
+  padding: 10px 16px;
+  font-size: 0.9rem;
   font-weight: 600;
   border: none;
   border-radius: 999px;
